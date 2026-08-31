@@ -1,17 +1,22 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-<>
-<h1 className="">Hello there</h1>
-</>
-  )
+    <>
+      <h1>Hello there</h1>
+      <Calculator></Calculator>
+    </>
+  );
 }
 
-export default App
+function Calculator() {
+  const total = 50;
+  return (
+    <>
+      <h2>Sum: {4 + 2}</h2>
+      <h2>Count: {total}</h2>
+    </>
+  );
+}
+
+export default App;
