@@ -4,14 +4,25 @@ function App() {
   return (
     <>
       <h1>Hello there</h1>
-      <Student name="Yamen" roll="35"></Student>
-      <Student name="Mastan" roll="47"></Student>
-      <Student name="Linkon" roll="32"></Student>
+      {/* <Student name="Yamen" roll="35"></Student> */}
+      <ProgrammingStat language="JavaScript" experience="10"></ProgrammingStat>
+      <ProgrammingStat language="Python" experience="15"></ProgrammingStat>
     </>
   );
 }
 
 //Components:
+
+function ProgrammingStat(props) {
+  console.log(props);
+  return (
+    <div className="student">
+      <h4>Programming Language: {props.language}</h4>
+      <h4>Experience: {props.experience}</h4>
+    </div>
+  );
+}
+
 function Student(props) {
   // const student = {
   //   border: "2px solid green",
