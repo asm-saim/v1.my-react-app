@@ -7,6 +7,7 @@ function App() {
     <>
       <h1>Hello there</h1>
       <Task name="CP" isDone={false}></Task>
+      <Task name="Interview Practice" isDone={true}></Task>
       {/* <Student name="Yamen" roll="35"></Student> */}
       {/* <ProgrammingStat language="JavaScript" experience="10"></ProgrammingStat>
       <ProgrammingStat language="Python" experience="15"></ProgrammingStat> */}
