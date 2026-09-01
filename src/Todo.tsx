@@ -1,5 +1,12 @@
-function Todo() {
-  return <div>Current Tasks remaining: </div>;
+function Todo(props) {
+  console.log(props);
+  const { task, time } = props;
+  return (
+    <div>
+      <h4>Current Tasks remaining: {task}</h4>
+      <h5>Time Duration : {time}</h5>
+    </div>
+  );
 }
 
 export default Todo;

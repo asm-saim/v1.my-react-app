@@ -8,7 +8,7 @@ function App() {
       {/* <Student name="Yamen" roll="35"></Student> */}
       {/* <ProgrammingStat language="JavaScript" experience="10"></ProgrammingStat>
       <ProgrammingStat language="Python" experience="15"></ProgrammingStat> */}
-      <Todo></Todo>
+      <Todo task="Do Programming" time="10 hrs"></Todo>
     </>
   );
 }
