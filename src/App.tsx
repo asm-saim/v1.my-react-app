@@ -1,13 +1,23 @@
 import "./App.css";
+import Book from "./Book";
 // import Todo from "./Todo";
 import Task from "./Task";
 
 function App() {
+  const books = ["Bangla", "English", "Math", "Biology", "Statistics"];
   return (
     <>
       <h1>Hello there</h1>
-      <Task name="CP" isDone={false}></Task>
-      <Task name="Interview Practice" isDone={true}></Task>
+      {books.map((book) => (
+        <Book name={book}></Book>
+      ))}
+
+      {/* {books.map((book) => (
+        <li>{book}</li>
+      ))} */}
+
+      {/* <Task name="CP" isDone={false}></Task>
+      <Task name="Interview Practice" isDone={true}></Task> */}
       {/* <Student name="Yamen" roll="35"></Student> */}
       {/* <ProgrammingStat language="JavaScript" experience="10"></ProgrammingStat>
       <ProgrammingStat language="Python" experience="15"></ProgrammingStat> */}
